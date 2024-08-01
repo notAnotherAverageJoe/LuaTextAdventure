@@ -45,8 +45,10 @@ local MyAdventurer = Adventurer:new(name, age, class)
 -- Display the adventurer's information
 print("A new hero arises!")
 MyAdventurer:Display()
+
 choice = getUserInput(MyAdventurer.name .. " Are you ready? 'y' or 'n' ")
 if choice == 'y' then
+    -- pass the Adventurer object into Raiding
     Raiding(MyAdventurer)
 else
     print("Goodbye friend.")
